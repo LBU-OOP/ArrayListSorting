@@ -1,12 +1,12 @@
 import java.util.Comparator;
 
-class RiderComparatorWpKG implements Comparator<Rider>
+class RiderComparatorWins implements Comparator<Rider>
 {
     public int compare(Rider one, Rider two)
     {
-        if (one.wattsPerKilo > two.wattsPerKilo)
+        if (one.wins > two.wins)
             return -1;
-        else if (two.wattsPerKilo > one.wattsPerKilo)
+        else if (two.wins > one.wins)
             return 1;
         else
             return 0;
